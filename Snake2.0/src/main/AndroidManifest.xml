@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mochilo.snake20"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="auto">
+    <application android:icon="@drawable/ic_launcher"
+        android:label="Snake"
+        android:debuggable="true">
+        <activity android:name="com.mochilo.androidgames.snake.SnakeGame"
+            android:label="Snake"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="16"/>
+</manifest>
